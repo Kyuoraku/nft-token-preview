@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
+:root{
+    --title-hover:  hsl(178, 100%, 50%);
+    --overlay: rgba(0,255,246,0.5);
+    --title:  hsl(0, 0%, 100%);
+    --background: hsl(215, 51%, 70%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+}
+
+.card-container{
+    display: block;
+    width: min-content;
+    height: auto;
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+    background-color:  var(--card-bg);
+
+}
+
+body{
+    background-color: var(--main-bg);
+    display: grid;
+    place-items: center;
+}
+
+img{
+    height: 300px;
+}
+
+.title-container h3{
+    color: var(--title);
+}
+
+h3, p, span{
+    font-family: 'Outfit', 'sans-serif'
+}
+
+h3{
+    font-weight: 600;
+}
+
+.description-container p{
+    color: var(--background);
+}
+
+.circled{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+hr{
+    background-color: var(--line);
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.price img, .time-left img{
+    height: 20px;
+}
+
+.price{
+    color: var(--title-hover);
+}
+
+.time-left, .credit-container p{
+    color: var(--background);
+}
+
+.price, .time-left, .credit-container{
+    display: flex;
+    align-items: center;
+}
+
+span img, .profile{
+    margin-right: 6px;
+}
+
+.circle{
+    border-radius: 50%;;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile{
+    width:  40px; 
+    height: 40px;
+}
+
+.separator{
+    margin: 15px 0px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--line);
+}
+
+.hover{
+    color: var(--title);
+}
+
+.hover:hover{
+    color: var(--title-hover);
+    cursor: pointer;
+}
+.card-img{
+    content: url('images/image-equilibrium.jpg');
+}
+
+.img-container{
+    position: relative;
+}
+
+.img-container:hover{
+    cursor: pointer;
+}
+
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+view:hover{
+    opacity: 1;
+}
+.view-color{
+    height: 100px;
+    width: 100px;
+    background-color: var(--title-hover);
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: var(--overlay);
+    opacity: 0;
+    transition: opacity 0.5s;
+    overflow: hidden;
+}
+.overlay img{
+    height: 50px;
+}
+.overlay:hover{
+    opacity: 1;
+}
